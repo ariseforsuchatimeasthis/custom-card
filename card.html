@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Card</title>
+    <style>
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card .icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .card .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card .description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .card .progress-bar {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            height: 10px;
+            width: 100%;
+        }
+        .card .progress-bar .progress {
+            background-color: #007bff;
+            height: 100%;
+            width: 95%; /* Change this width to adjust the progress percentage */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .card .progress-text {
+            font-size: 12px;
+            position: absolute;
+            top: -20px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="icon">📅</div>
+        <div class="title">Calendar Management</div>
+        <div class="description">Efficiently managing and organizing executive schedules.</div>
+        <div class="progress-text">95%</div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+</body>
+</html>
